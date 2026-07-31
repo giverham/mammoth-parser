@@ -13,8 +13,12 @@ export function CtaSection() {
             Join a growing community of verified members who believe in showing
             up for one another.
           </p>
-          <Button size="lg" variant="secondary" asChild>
-            <Link href="/auth/sign-up">Create your free account</Link>
+          <Button
+            size="lg"
+            variant="secondary"
+            render={<Link href="/auth/sign-up" />}
+          >
+            Create your free account
           </Button>
         </div>
       </div>

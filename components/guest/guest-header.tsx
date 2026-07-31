@@ -32,12 +32,14 @@ export function GuestHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Button variant="ghost" asChild className="hidden sm:inline-flex">
-            <Link href="/auth/login">Sign in</Link>
+          <Button
+            variant="ghost"
+            className="hidden sm:inline-flex"
+            render={<Link href="/auth/login" />}
+          >
+            Sign in
           </Button>
-          <Button asChild>
-            <Link href="/auth/sign-up">Join Givermi</Link>
-          </Button>
+          <Button render={<Link href="/auth/sign-up" />}>Join Givermi</Button>
         </div>
       </div>
     </header>

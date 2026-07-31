@@ -31,8 +31,8 @@ export default async function SignUpSuccessPage({
         </div>
 
         <div className="flex w-full flex-col gap-3">
-          <Button asChild size="lg" className="w-full">
-            <Link href="/auth/login">Continue to sign in</Link>
+          <Button size="lg" className="w-full" render={<Link href="/auth/login" />}>
+            Continue to sign in
           </Button>
           <p className="text-xs text-muted-foreground">
             Didn&apos;t get the email? Check your spam folder, or wait a moment

@@ -24,11 +24,15 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Button size="lg" asChild>
-              <Link href="/auth/sign-up">Join the community</Link>
+            <Button size="lg" render={<Link href="/auth/sign-up" />}>
+              Join the community
             </Button>
-            <Button size="lg" variant="outline" asChild>
-              <Link href="#how-it-works">See how it works</Link>
+            <Button
+              size="lg"
+              variant="outline"
+              render={<Link href="#how-it-works" />}
+            >
+              See how it works
             </Button>
           </div>
 
